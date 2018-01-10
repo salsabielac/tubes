@@ -26,10 +26,9 @@ public class UpdateBuku extends AppCompatActivity {
         text3 = (EditText) findViewById(R.id.editText3); //id_penerbit
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM buku WHERE judul = '" +
-                getIntent().getStringExtra("judul") + "'",null);
+                getIntent().getStringExtra("judul") + "'", null);
         cursor.moveToFirst();
-        if (cursor.getCount()>0)
-        {
+        if (cursor.getCount() > 0) {
             cursor.moveToPosition(0);
             text1.setText(cursor.getString(0).toString());
             text2.setText(cursor.getString(1).toString());
@@ -43,13 +42,13 @@ public class UpdateBuku extends AppCompatActivity {
             public void onClick(View arg0) {
 // TODO Auto-generated method stub
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
-                db.execSQL("update buku set judul='"+
-                        text2.getText().toString() +"', id_penerbit='" +
-                        text3.getText().toString()+"' where id_buku='"+
-                        text1.getText().toString()+"'");
+                db.execSQL("update buku set judul='" +
+                        text2.getText().toString() + "', id_penerbit='" +
+                        text3.getText().toString() + "' where id_buku='" +
+                        text1.getText().toString() + "'");
                 Toast.makeText(getApplicationContext(), "Berhasil",
                         Toast.LENGTH_LONG).show();
-                Penyewa.pe.RefreshList();
+                Buku.ma.RefreshList();
                 finish();
             }
         });

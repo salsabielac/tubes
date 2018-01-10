@@ -37,7 +37,7 @@ public class DataHelper extends SQLiteOpenHelper {
         String sql4 = "INSERT INTO buku(id_buku,judul,harga,id_penerbit)VALUES ('1', 'koala kumal','221222','1'),('2', 'kambing hitam','121212','2');";
         db.execSQL(sql4);
 
-        String sql6 = "INSERT INTO penyewa(id,nama_penyewa,tgl,id_buku)VALUES ('1', 'noviadhini','221222','1'),('2', 'Anggi','121212','2');";
+        String sql6 = "INSERT INTO penyewa(id,nama_penyewa,tgl,id_buku)VALUES ('1', 'noviadhini','221222','1'),('2', 'Anggi','121212','2'),('3', 'Ivan Ngganteng','212','3');";
         db.execSQL(sql6);
 
     }
