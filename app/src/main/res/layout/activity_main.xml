@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="salsabielac.tubes.MainActivity">
+
+    <Button
+        android:id="@+id/lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Lihat Lokasi"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="210dp"
+        />
+
+    <Button
+        android:id="@+id/list_penyewa"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Lihat Penyewa"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="170dp"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lihat_buku"
+        android:text="Lihat Buku"
+        android:layout_marginTop="340dp"
+        android:layout_marginBottom="125dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lihat_penerbit"
+        android:text="Lihat Penerbit"
+        android:layout_marginTop="385dp"
+        android:layout_marginBottom="80dp"
+        />
+
+</RelativeLayout>
